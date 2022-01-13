@@ -17,7 +17,22 @@ public class decimalABinarioApp {
 
 	public static void decimalABinari(int x) {
 		
-		System.out.println("El numero " + x + " en decimal és: " + Integer.toBinaryString(x));
+		String resto = "";
+		String binari = ""; 
+		
+		do {
+			
+			if(x % 2 == 0) {
+				resto = "0";
+			}else {
+				resto = "1";
+			}
+			x = x / 2;
+			binari = resto + binari;
+			
+		}while(x!=0);
+		
+		System.out.println("El teu numero en binari és: " + binari);
 		
 	}
 	

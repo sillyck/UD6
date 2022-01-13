@@ -1,9 +1,8 @@
-import java.util.Scanner;
-
 /**
  * 
  * @author Jordi Ribellas
  */
+import java.util.Scanner;
 public class numerosPrimosApp {
 
 	public static void main(String[] args) {

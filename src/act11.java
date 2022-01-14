@@ -7,7 +7,7 @@ public class act11 {
 
 	public static void main(String[] args) {
 		
-		String tamany = JOptionPane.showInputDialog("De que tamaño sera el array1?");
+		String tamany = JOptionPane.showInputDialog("De que tamaño seran las array?");
 		int largo = Integer.parseInt(tamany);
 
 		int array1[] = new int[largo];
@@ -15,6 +15,24 @@ public class act11 {
 		
 		llenarArrayR(array1);
 		
+		array2 = array1;
+		
+		System.out.println("Array1: ");
+		mostrarArray(array1);
+		
+		System.out.println("Array2: ");
+		mostrarArray(array2);
+		
+		llenarArrayR(array2);
+		
+		System.out.println("Array1: ");
+		mostrarArray(array1);
+		
+		System.out.println("Array2: ");
+		mostrarArray(array2);
+		
+		System.out.println("ArrayMultiplicada: ");
+		multiplicar(array1, array2);
 	}
 
 	public static void llenarArrayR(int array[]) {
@@ -25,14 +43,27 @@ public class act11 {
 		
 	}
 	
-	
-	
-	
-	
-	
-	public static int[] agruparArrays(int array1, int array2) {
+	public static void igualarArrays(int array1[], int array2[]) {
 		
-		int[] arrayMult[];
-		return arrayMult[];
+		for(int i=0; i<array1.length; i++) {
+			array2[i] = array1[i];
+			
+		}
+	}
+	
+	public static void mostrarArray(int array[]) {
+		
+		for(int i=0; i<array.length; i++) {
+			System.out.println(array[i]);
+		}
+	}
+	
+	public static void multiplicar(int a1[], int a2[]) {
+		int arrayMultiplicada[] = new int[a1.length];
+		
+		for(int i=0; i<a1.length; i++) {
+			arrayMultiplicada[i] = a1[i] * a2[i];
+			System.out.println(arrayMultiplicada[i]);
+		}
 	}
 }

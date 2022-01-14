@@ -9,7 +9,7 @@ public class act12App {
 		int array1[] = new int[largo];
 		
 		String ta = JOptionPane.showInputDialog("En que numero quieres que acaben los digitos mostrados?");
-		int ends = Integer.parseInt(tamany);
+		int ends = Integer.parseInt(ta);
 		
 		nrandom(array1);
 		mostrarIndicats(array1, ends);
@@ -30,9 +30,9 @@ public class act12App {
 		
 		for(int i=0; i<a1.length; i++) {
 			String numStr = String.valueOf(a1[i]);
-			System.out.println(a1[i]);
+			//System.out.println(a1[i]);
 			if(numStr.endsWith(indicat)) {
-				System.out.println("----------");
+				//System.out.println("----------");
 				System.out.println(a1[i]);
 			}
 		}
